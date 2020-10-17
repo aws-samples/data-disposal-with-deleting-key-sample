@@ -1,0 +1,33 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "dsd-role-lambda",
+        "RoleId": "AROAV4LT4MWRGDGX4N63W",
+        "Arn": "arn:aws:iam::<ACCOUNT>:role/dsd-role-lambda",
+        "CreateDate": "2020-06-01T02:44:34+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "Description": "Allows Lambda functions to call AWS services on your behalf.",
+        "MaxSessionDuration": 3600,
+        "Tags": [
+            {
+                "Key": "Name",
+                "Value": "dsd-role-lambda"
+            }
+        ],
+        "RoleLastUsed": {
+            "LastUsedDate": "2020-06-02T14:42:40+00:00",
+            "Region": "us-east-1"
+        }
+    }
+}

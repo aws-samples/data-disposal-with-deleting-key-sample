@@ -1,0 +1,8 @@
+private
+unittest
+tmp
+digest.txt
+keyListAboutDeletedS3Bucket.dat
+signature.binary
+*.bsh
+__pycache__

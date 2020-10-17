@@ -1,0 +1,20 @@
+{
+    "AttachedPolicies": [
+        {
+            "PolicyName": "AmazonS3FullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+        },
+        {
+            "PolicyName": "AmazonS3ReadOnlyAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
+        },
+        {
+            "PolicyName": "AWSKeyManagementServicePowerUser",
+            "PolicyArn": "arn:aws:iam::aws:policy/AWSKeyManagementServicePowerUser"
+        },
+        {
+            "PolicyName": "AWSKeyManagementServicesForDeletion",
+            "PolicyArn": "arn:aws:iam::<ACCOUNT>:policy/AWSKeyManagementServicesForDeletion"
+        }
+    ]
+}
