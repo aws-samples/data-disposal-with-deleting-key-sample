@@ -4,6 +4,8 @@ Schedule deletion of a KMS CMK associated with an object in S3 bucket at the sam
 
 <img src="./architecture.png" whdth=500>
 
+[日本語(Japanese)](https://github.com/aws-samples/data-disposal-with-deleting-key-sample/blob/main/README_jp.md)
+
 # premise
 
 the 4 following premise is needed to use the function:
@@ -25,7 +27,7 @@ the 4 following premise is needed to use the function:
 <the bucket name stored the file of key information and signature>
 ```
 
-# build the lambda function : "delStorageData" 
+# build the lambda function : "delStorageData"
 
 1. Create IAM roles and policy to attach (see json files in 02_iam folder respectively)
     - Create policy “policy_AWSKeyManagementServicesForDeletion”
@@ -42,7 +44,7 @@ the 4 following premise is needed to use the function:
     - Run lambda by entering data in the following json format
 ```
 {
-    "bucketName" : "<the target bucket name to delete>", 
+    "bucketName" : "<the target bucket name to delete>",
     "bucketNameStoredKeylist" : "<the bucket name stored the file of key information and signature>",
     "keyIdToSign" : "<Key ID to sign at thekey list file>",
     "filenameOfKeyList" : "<the filename for the file about key information>", ## need to set
@@ -63,7 +65,7 @@ Make sure the hash (sha256) of the original file matches <digest file>
 
 $ sha256sum <key list file>
 d4e120ff985bb3f0c220d1879f3868840d6dab3e4e2256a984d48eac2dee3742  keyListAboutDeletedS3Bucket.dat
-$ cat digest.txt 
+$ cat digest.txt
 d4e120ff985bb3f0c220d1879f3868840d6dab3e4e2256a984d48eac2dee3742
 ```
 
@@ -85,4 +87,3 @@ $ aws kms verify  --key-id alias/dsd-key-for-signature-ecc_secg_p256k1 --message
     "SigningAlgorithm": "ECDSA_SHA_256"
 }
 ```
-
