@@ -1,10 +1,10 @@
 # lambda function "delStorageData"
 
+[日本語(Japanese)](https://github.com/aws-samples/data-disposal-with-deleting-key-sample/blob/main/README_jp.md)
+
 Schedule deletion of a KMS CMK associated with an object in S3 bucket at the same time as S3 bucket deletion.
 
 <img src="./architecture.png" whdth=500>
-
-[日本語(Japanese)](https://github.com/aws-samples/data-disposal-with-deleting-key-sample/blob/main/README_jp.md)
 
 # premise
 
