@@ -4,6 +4,8 @@
 
 Schedule deletion of a KMS CMK associated with an object in S3 bucket at the same time as S3 bucket deletion.
 
+**Caution: NOT to specify the resource you are using during the test as the specified S3 Bucket and CMK will be deleted.**
+
 <img src="./architecture.png" whdth=500>
 
 # premise

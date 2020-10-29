@@ -2,6 +2,8 @@
 
 S3 bucketのオブジェクトに紐づけられたKMSのCMKを、S3 bucket削除と同時に削除スケジューリングします。
 
+**注：指定したS3 BucketとCMKが削除されてしまうため、テスト時に利用中のリソースは絶対に指定しないようご注意ください。**
+
 <img src="./architecture.png" whdth=500>
 
 # 前提
